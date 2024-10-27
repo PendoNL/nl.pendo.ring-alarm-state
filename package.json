@@ -1,0 +1,17 @@
+{
+  "name": "nl.pendo.ring-alarm-state",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@tsconfig/node16": "^16.1.3",
+    "@types/homey": "npm:homey-apps-sdk-v3-types@^0.3.9",
+    "@types/node": "^22.8.1",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "dotenv": "^15.0.1",
+    "ring-client-api": "^13.1.0"
+  }
+}
