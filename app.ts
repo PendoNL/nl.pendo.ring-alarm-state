@@ -2,8 +2,6 @@
 
 import Homey from 'homey';
 import { RingApi } from 'ring-client-api'
-import { readFile, writeFile } from 'fs'
-import { promisify } from 'util'
 
 module.exports = class MyApp extends Homey.App {
   async onInit() {
@@ -25,18 +23,7 @@ module.exports = class MyApp extends Homey.App {
         async ({ newRefreshToken, oldRefreshToken }) => {
           // console.log('Refresh Token Updated: ', newRefreshToken)
 
-          // If you are implementing a project that use `ring-client-api`, you should subscribe to onRefreshTokenUpdated and update your config each time it fires an event
-          // Here is an example using a .env file for configuration
-          /*if (!oldRefreshToken) {
-            return
-          }
-
-          const currentConfig = await promisify(readFile)('../env.json'),
-              updatedConfig = currentConfig
-                  .toString()
-                  .replace(oldRefreshToken, newRefreshToken)
-
-          await promisify(writeFile)('../env.json', updatedConfig)*/
+          // See https://github.com/dgreif/ring/blob/02515613123584e2aafc67c84941650698f7eefc/examples/example.ts#L22-L39
         }
     );
 
