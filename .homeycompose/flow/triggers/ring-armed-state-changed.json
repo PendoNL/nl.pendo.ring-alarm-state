@@ -1,0 +1,20 @@
+{
+  "title": {
+    "en": "When Ring armed state changes"
+  },
+  "hint": {
+    "en": "This card is triggered every time the active armed state of a Ring location changes"
+  },
+  "tokens": [
+    {
+      "type": "string",
+      "name": "armed-state",
+      "title": {
+        "en": "Armed state"
+      },
+      "example": {
+        "en": "Holds the current state of the Ring location"
+      }
+    }
+  ]
+}
